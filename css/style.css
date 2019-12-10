@@ -1,7 +1,7 @@
 @import 'font.css';
 
 body {
-    background: gray;
+    font-family: "Open Sans";
 }
 
 
@@ -30,4 +30,117 @@ ul, li {
 .menu__item a:hover {
     text-decoration: none;
     color: rgb(155, 153, 153);
+}
+
+/*Header*/
+
+.header > div {
+background-image: url(../img/header.jpg);
+padding: 180px;
+text-align: center;
+color: white;
+background-size: cover;
+background-position: 0 100%;
+}
+
+.header__title {
+    font-size: 55px;
+}
+
+.header__text {
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.button {
+    padding: 10px 25px;
+    margin: 0 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.button_empty {
+    background: transparent;
+    border: 2px solid white;
+}
+
+.button_full {
+    background: rgb(3, 177, 162);
+    border: 2px solid rgb(3, 177, 162);
+
+}
+
+.button_empty:hover,
+.button_full:hover {
+    border: 2px dotted white;
+    background: rgb(2, 128, 117);
+}
+
+/* Aboute */
+
+.about {
+    padding: 120px;
+    color: #000;
+    background: white;
+    text-align: center;
+    
+}
+
+.about__title {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.about__text {
+    font-size: 15px;
+    margin-bottom: 110px;
+}
+
+.about__h3 {
+    font-family: "Open Sans semibold";
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Servises */
+.services {
+    padding: 120px;
+    color: #000;
+    background: white;
+    text-align: center;
+    background-color: rgb(199, 224, 226);
+}
+
+.our_card {
+    background: white;
+    padding: 50px 20px 40px;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+
+.our_card:hover {
+    background: rgb(2, 128, 117);
+    color: white;
+    box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+}
+
+.button-services {
+
+    color: #000;
+    transition: 0.3s;
+    border: 2px solid black;
+    background: transparent;
+    text-transform: uppercase;
+    padding: 10px 12px 10px;
+}
+
+.our_card:hover .button-services {
+    color: white;
+    border: 2px solid white;
+}
+
+.button-services:hover {
+    cursor: pointer;
 }
